@@ -60,7 +60,7 @@ Anaconda environment recommended here!
 ```bash
 python test_camo_mask.py --content /home/ac/data/2023/huyang/COD_Dataset/NC4K/Imgs/1812.jpg --style /home/ac/data/2023/huyang/COD_Dataset/coco_NC4K/1812.jpg --mask /home/ac/data/2023/huyang/COD_Dataset/NC4K/GT/1812.png --alpha 0.8 --gpu 0
 # 批量化
-python test_camo_mask_batch.py -c /home/ac/data/2023/huyang/COD_Dataset/NC4K/Imgs -s /home/ac/data/2023/huyang/COD_Dataset/coco_NC4K -m /home/ac/data/2023/huyang/COD_Dataset/NC4K/GT -o result_camo/NC4K  --alpha 0.8 --gpu 0
+python test_camo_mask_batch_new.py -c /home/ac/data/2023/huyang/COD_Dataset/NC4K/Imgs -s /home/ac/data/2023/huyang/COD_Dataset/coco_NC4K -m /home/ac/data/2023/huyang/COD_Dataset/NC4K/GT -o result_camo/NC4K  --alpha 0.8 --gpu 0
 ```
 
    ```
