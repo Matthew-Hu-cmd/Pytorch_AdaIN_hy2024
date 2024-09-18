@@ -51,7 +51,15 @@ Anaconda environment recommended here!
 
    ```python
    python test -c content_image_path -s style_image_path
+   # quick demo
+   python test.py -c content/blonde_girl.jpg -s style/antimonocromatismo.jpg
+   python test.py -c /home/ac/data/2023/huyang/COD_Dataset/NC4K/Imgs/1002.jpg -s /home/ac/data/2023/huyang/COD_Dataset/coco_NC4K/1002.jpg
    ```
+
+批量化测试伪装生成，content肯定是会需要变化的，试一下Imgs作为content 随机的coco作为style，生成的结果进行分割+贴图
+```bash
+python test_camo_mask.py --content /home/ac/data/2023/huyang/COD_Dataset/NC4K/Imgs/1002.jpg --style /home/ac/data/2023/huyang/COD_Dataset/coco_NC4K/1002.jpg --mask /home/ac/data/2023/huyang/COD_Dataset/NC4K/GT/1002.png --alpha 0.8 --gpu 0
+```
 
    ```
    usage: test.py [-h] 
